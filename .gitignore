@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+config.local.yaml
+data/
+downloads/
+client_secrets.json
+youtube_token.json
+*.log
+

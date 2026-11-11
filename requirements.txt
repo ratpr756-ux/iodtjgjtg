@@ -1,0 +1,13 @@
+yt-dlp[default]>=2025.1.15
+faster-whisper>=1.1.0
+av<19
+PyYAML>=6.0.2
+schedule>=1.2.2
+python-dotenv>=1.0.1
+google-api-python-client>=2.160.0
+google-auth-oauthlib>=1.2.1
+google-auth-httplib2>=0.2.0
+Flask>=3.1.0
+Flask-WTF>=1.2.2
+waitress>=3.0.2
+

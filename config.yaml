@@ -1,0 +1,52 @@
+app:
+  timezone: Asia/Baghdad
+  poll_hours: 24
+  lookback_hours: 24 # used only when include_older_unseen_channel_videos is disabled
+  max_videos_per_run: 0 # process every pending video across all monitored channels
+  max_videos_per_channel_per_run: 3
+  include_older_unseen_channel_videos: true
+  max_clips_per_video: 5
+  auto_schedule_enabled: true
+  run_on_startup: true
+channels:
+- name: كاي
+  url: https://www.youtube.com/@KaiCenatLive/videos
+  authorized_for_reuse: true
+- name: سبيد
+  url: https://www.youtube.com/@IShowSpeed
+  authorized_for_reuse: true
+- name: رونالدو
+  url: https://www.youtube.com/@StableRonaldoLive/videos
+  authorized_for_reuse: true
+clips:
+  min_seconds: 8
+  max_seconds: 30
+  target_seconds: 20
+  extended_max_seconds: 45
+  analyze_audio_peaks: true
+  output_width: 1080
+  output_height: 1920
+  whisper_model: small
+  whisper_device: auto
+  whisper_compute_type: auto
+  subtitle_font: Arial
+paths:
+  database: data/pipeline.sqlite3
+  source_downloads: downloads/sources
+  clips: downloads/clips
+  logs: logs
+publishing:
+  enabled: true
+  max_posts_per_platform_per_day: 3
+  minimum_hours_between_posts: 2
+  channel_rotation_hours: 24
+  rotation_start_channel_url: https://www.youtube.com/@IShowSpeed
+  rotation_state_file: data/publishing_rotation.json
+  youtube:
+    enabled: true
+    privacy: public
+    category_id: '22'
+    client_secrets: data/youtube_client_secrets.json
+    token_file: data/youtube_token.json
+logging:
+  level: INFO

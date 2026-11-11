@@ -1,0 +1,152 @@
+2026-11-10 23:44:02,937 INFO __main__: Pipeline started from application startup
+2026-11-10 23:44:02,938 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-10 23:44:02,978 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:46:11,786 ERROR __main__: YouTube OAuth connection failed
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\web_app.py", line 265, in connect_youtube
+    YouTubeUploader(client, token).connect()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 41, in connect
+    self._service()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 32, in _service
+    raise FileNotFoundError(f"Upload a Google OAuth Desktop client JSON first: {self.client_secrets}")
+FileNotFoundError: Upload a Google OAuth Desktop client JSON first: C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\data\youtube_client_secrets.json
+2026-11-10 23:46:13,512 ERROR __main__: YouTube OAuth connection failed
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\web_app.py", line 265, in connect_youtube
+    YouTubeUploader(client, token).connect()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 41, in connect
+    self._service()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 32, in _service
+    raise FileNotFoundError(f"Upload a Google OAuth Desktop client JSON first: {self.client_secrets}")
+FileNotFoundError: Upload a Google OAuth Desktop client JSON first: C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\data\youtube_client_secrets.json
+2026-11-10 23:50:01,006 ERROR __main__: YouTube OAuth connection failed
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\web_app.py", line 265, in connect_youtube
+    YouTubeUploader(client, token).connect()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 41, in connect
+    self._service()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\auto_uploader.py", line 32, in _service
+    raise FileNotFoundError(f"Upload a Google OAuth Desktop client JSON first: {self.client_secrets}")
+FileNotFoundError: Upload a Google OAuth Desktop client JSON first: C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\data\youtube_client_secrets.json
+2026-11-10 23:50:17,086 INFO __main__: Pipeline started from dashboard button
+2026-11-10 23:50:17,088 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:50:35,877 INFO __main__: Pipeline started from dashboard button
+2026-11-10 23:50:35,880 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:51:53,715 INFO __main__: Pipeline started from application startup
+2026-11-10 23:51:53,716 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-10 23:51:53,717 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:52:35,130 INFO __main__: Pipeline started from application startup
+2026-11-10 23:52:35,134 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-10 23:52:35,137 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:53:47,662 INFO __main__: Pipeline started from application startup
+2026-11-10 23:53:47,665 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-10 23:53:47,669 INFO main: Found 0 recent videos; 0 were new
+2026-11-10 23:59:23,207 ERROR web_app: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\web_app.py", line 157, in dashboard
+    all_clips = db.get_all_clips()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\templates\base.html", line 46, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\templates\index.html", line 25, in block 'content'
+    <form action="{{ url_for('stop_work') }}" method="post" class="stop-form">
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\werkzeug\routing\map.py", line 901, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'stop_work'. Did you mean 'dashboard' instead?
+2026-11-11 00:00:16,176 INFO __main__: Pipeline started from application startup
+2026-11-11 00:00:16,178 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-11 00:00:16,179 INFO main: Found 0 recent videos; 0 were new
+2026-11-11 00:09:05,067 INFO __main__: Pipeline started from application startup
+2026-11-11 00:09:05,068 INFO waitress: Serving on http://127.0.0.1:5000
+2026-11-11 00:09:05,070 INFO main: Found 0 recent videos; 0 were new
+2026-11-11 00:09:45,265 INFO google_auth_oauthlib.flow: Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=700956563598-1ueilkatpm76m7iq7aood8qis67f0svd.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A63761%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload&state=vBdkWbtSW5refR370UmePDIKbdXKpp&code_challenge=Lu9A1QDqY8Q7ilEQZWyqssG7dDssnnGg48fHCt4FWrI&code_challenge_method=S256&access_type=offline
+2026-11-11 00:12:48,164 INFO google_auth_oauthlib.flow: Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=700956563598-1ueilkatpm76m7iq7aood8qis67f0svd.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A49748%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload&state=zgF1ZpdXriZUcgzAUUGui55sLPkrsp&code_challenge=RzJEjBCFGMg1xILVP-hmNQWwe-airOjbawwRahYLee0&code_challenge_method=S256&access_type=offline
+2026-11-11 00:30:45,572 INFO google_auth_oauthlib.flow: Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=700956563598-1ueilkatpm76m7iq7aood8qis67f0svd.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A53633%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload&state=j12EXG8hinbEjC7wumtCqjePdwKo4I&code_challenge=IRx41h-CB9e6d2qW-MOrN1QFogXrbfcRLnnFCuGN1UA&code_challenge_method=S256&access_type=offline
+2026-11-11 00:38:50,072 INFO google_auth_oauthlib.flow: Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=700956563598-1ueilkatpm76m7iq7aood8qis67f0svd.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A58489%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload&state=AOIPVPkkpM36tkI9x5RTjMAQVctZhV&code_challenge=SzpBhJrKxrox5uY5kIsnGFJl3hhSPKavG6joO2hEFbw&code_challenge_method=S256&access_type=offline
+2026-11-11 00:39:13,658 INFO google_auth_oauthlib.flow: "GET /?state=AOIPVPkkpM36tkI9x5RTjMAQVctZhV&iss=https://accounts.google.com&code=4/0AUn6Hd-yP10vGrOidVZmKWW0CK5lEKfT63QGapOFH2eI3cLVoYMPhxuq3DiRb44apEtLLw&scope=https://www.googleapis.com/auth/youtube.upload HTTP/1.1" 200 65
+2026-11-11 00:39:14,480 INFO googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-11-11 00:41:27,244 INFO __main__: Pipeline started from dashboard button
+2026-11-11 00:43:33,399 INFO main: Found 1 recent videos; 1 were new
+2026-11-11 00:43:33,409 INFO main: Downloading 1PKa4MZrHfU: Driving GTA 5 Low Riders In Real Life!
+2026-11-11 00:43:33,409 ERROR main: Processing failed for 1PKa4MZrHfU
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\main.py", line 139, in run_pipeline
+    source = monitor.download(video)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\youtube_monitor.py", line 83, in download
+    video_dir = self.download_dir / video["id"]
+                                    ~~~~~^^^^^^
+KeyError: 'id'
+2026-11-11 00:45:46,742 INFO __main__: Pipeline started from dashboard button
+2026-11-11 00:47:50,823 INFO main: Found 1 recent videos; 0 were new
+2026-11-11 00:47:50,842 INFO main: Downloading 1PKa4MZrHfU: Driving GTA 5 Low Riders In Real Life!
+2026-11-11 00:47:50,843 ERROR main: Processing failed for 1PKa4MZrHfU
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\main.py", line 139, in run_pipeline
+    source = monitor.download(video)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\youtube_monitor.py", line 83, in download
+    # Discovery records use id/url; queued SQLite rows use video_id/video_url.
+KeyError: 'id'
+2026-11-11 01:02:59,886 INFO __main__: Pipeline started from application startup
+2026-11-11 01:06:16,082 INFO main: Found 1 recent videos; 0 were new
+2026-11-11 01:06:16,106 INFO main: Downloading 1PKa4MZrHfU: Driving GTA 5 Low Riders In Real Life!
+2026-11-11 01:07:08,177 INFO main: Selecting hook-led clips from 1PKa4MZrHfU
+2026-11-11 01:07:28,669 INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+2026-11-11 01:07:32,500 ERROR main: Processing failed for 1PKa4MZrHfU
+Traceback (most recent call last):
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\main.py", line 159, in run_pipeline
+    clips = create_clips(source, clip_dir, video_id, video["title"],
+                         config.get("clips", {}), int(app.get("max_clips_per_video", 3)))
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\opus_automation.py", line 216, in create_clips
+    words = _transcribe(source, str(settings.get("whisper_model", "small")),
+                        str(settings.get("whisper_device", "cpu")),
+                        str(settings.get("whisper_compute_type", "int8")))
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\opus_automation.py", line 87, in _transcribe
+    segments, _ = model.transcribe(str(path), word_timestamps=True, vad_filter=True,
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                   beam_size=3, condition_on_previous_text=False)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\hp\Documents\Codex\2026-11-10\ratpr756-gmail-com\outputs\shorts_pipeline\.venv\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
